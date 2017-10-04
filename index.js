@@ -50,11 +50,14 @@ function total() {
 }
 
 function removeFromCart(item) {
+  var itemInCart = false; 
+  
   for (var i = 0; i < cart.length; i++) {
     if (cart[i].hasOwnProperty(item)) {
       cart.splice(i, 1);
+      itemInCart = true; 
       return cart;
-    } else {
+    } else  {
         console.log("That item is not in your cart");
       }
   }
