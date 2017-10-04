@@ -30,16 +30,12 @@ function viewCart() {
           if (i == cart.length) {
             string += `and ${key} at $${cart[i][key]}.`
           }
-          if (cart.length == 2) {
-              string += `, `;
-           } else {
-               string += `.`;
+
            }
         }
       }
       console.log("test");
       console.log(string);
-    }
 }
 
 viewCart();
