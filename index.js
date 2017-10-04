@@ -28,13 +28,21 @@ function viewCart() {
     for (var i = 0, n = cart.length; i < n; i++) {
       for (var key in cart[i]) {
         if (cart.length === 1) {
-          string += `${key} at $${cart[i][key]}.`
+          string += `${key} at $${cart[i][key]}.`;
+        } else if (cart.length === 2) {
+            string += `${key} at $${cart[i][key]} `;
+          if (i == cart.length - 1) {
+            string += `and`; 
+          }
+        } else {
+            string += `${key} at $${cart[i][key]}, `;
+            if (i == cart.length - 1) {
+              string += `and`; 
+            }
         }
-        string += `${key} at $${cart[i][key]}, `
-        if (i == cart.length[i]) {
-          string += `and ${key} at $${cart[i][key]}.`
+
   }
-      
+
           }
 
            }
