@@ -42,10 +42,10 @@ function total() {
   var totalCost = 0;
   for (var i = 0; i < cart.length; i++) {
     for (var key in cart[i]) {
-      if(cart.hasOwnProperty(key)) {
+      //if(cart.hasOwnProperty(key)) {
         var value = cart[i][key];
         totalCost += value ;
-      }
+      //}
     }
   }
   return totalCost;
