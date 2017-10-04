@@ -49,7 +49,7 @@ function total() {
   return totalCost;
 }
 
-function removeFromCart(item) {
+function removeFromCart(key) {
   for (var i = 0; i < cart.length; i++) {
     for (var key in cart[i]) {
       if (cart.hasOwnProperty(key)) {
