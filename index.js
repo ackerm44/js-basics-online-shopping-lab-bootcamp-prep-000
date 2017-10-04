@@ -27,6 +27,11 @@ function viewCart() {
       for (var i = 0; i < cart.length; i++) {
         for (var key in cart[i]) {
          string += `${key} at $${cart[i][key]}`
+           if(i != cart.length) {
+             string += ", "; 
+           } else {
+               string += "."
+           }
         }
         console.log(string);
       }
