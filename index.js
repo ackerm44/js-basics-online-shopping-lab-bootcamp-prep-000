@@ -51,8 +51,8 @@ function total() {
 
 function removeFromCart(item) {
   for (var i = 0; i < cart.length; i++) {
-    for (var key in cart[i]) {
-      if (cart.hasOwnProperty('key')) {
+    for (var key in cart[i][key]) {
+      if (cart.hasOwnProperty(key)) {
         cart.splice(i,1);
         return cart;
       } else {
