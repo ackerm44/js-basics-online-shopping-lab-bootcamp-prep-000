@@ -40,7 +40,7 @@ function viewCart() {
               if (i < cart.length -1) {
                 string += ", ";
               } else if (i == cart.length - 2){
-                  string += ", and"; 
+                  string += ", and "; 
               } else {
                 string += "."
               }
