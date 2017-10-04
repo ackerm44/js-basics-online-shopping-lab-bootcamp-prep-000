@@ -57,7 +57,7 @@ function removeFromCart(item) {
       cart.splice(i, 1);
       itemInCart = true;
       return cart;
-    } 
+    }
   }
   if (!iteminCart)  {
       console.log("That item is not in your cart");
