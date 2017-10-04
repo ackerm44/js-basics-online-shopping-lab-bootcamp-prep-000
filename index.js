@@ -31,7 +31,7 @@ function viewCart() {
             string += `${key} at $${cart[i][key]}.`;
           } else if (cart.length === 2) {
               string += `${key} at $${cart[i][key]} `;
-            if (i == (cart.length)) {
+            if (i == cart.length) {
               string += `, and`;
             }
           } else {
