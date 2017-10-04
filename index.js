@@ -1,4 +1,4 @@
-var cart = [{bananas: 15}, {avocados: 12}, {lettuce: 5}];
+var cart = [{bananas: 15}, {avocados: 12}];
 
 function getCart() {
   return cart;
@@ -44,8 +44,6 @@ function viewCart() {
         }
       }
     }
-
-      console.log("test");
       console.log(string);
 }
 
