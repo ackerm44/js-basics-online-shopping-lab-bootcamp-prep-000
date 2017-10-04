@@ -28,13 +28,13 @@ function viewCart() {
         for (var key in cart[i]) {
          string += `${key} at $${cart[i][key]}`
            if(i != cart.length) {
-             string += ", "; 
+             string += ", ";
            } else {
-               string += "."
+               string += "."; 
            }
         }
-        console.log(string);
       }
+      console.log(string);
     }
 }
 
