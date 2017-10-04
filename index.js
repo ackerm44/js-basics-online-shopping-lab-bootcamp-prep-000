@@ -33,7 +33,8 @@ function viewCart() {
               string += `${key} at $${cart[i][key]}`;
             if (i == cart.length - 2 ) {
               string += ` and `;
-            }
+            } else if (i == cart.length) {
+              string += "."            }
           } else {
               string += `${key} at $${cart[i][key]}, `;
               if (i === cart.length - 1) {
