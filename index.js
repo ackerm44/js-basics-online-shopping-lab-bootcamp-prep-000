@@ -64,7 +64,7 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   if (cardNumber > 10000000) {
-    var cartTotal = total();  
+    var cartTotal = total();
     console.log(`Your total cost is $${cartTotal}, which will be charged to the card ${cardNumber}.`)
     for (var i = 0; i < cart.length; i++) {
       cart = [];
