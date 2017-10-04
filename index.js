@@ -28,7 +28,7 @@ function viewCart() {
         for (var key in cart[i]) {
           string += `${key} at $${cart[i][key]},`
           if (i == cart.length) {
-            string += `and ${key} at $${cart[i][key]}`
+            string += `and ${key} at $${cart[i][key]}.`
           }
           if (cart.length == 2) {
               string += `, `;
