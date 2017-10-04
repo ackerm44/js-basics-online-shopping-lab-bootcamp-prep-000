@@ -42,10 +42,8 @@ function total() {
   var totalCost = 0;
   for (var i = 0; i < cart.length; i++) {
     for (var key in cart[i]) {
-      //if(cart.hasOwnProperty(key)) {
-        var value = cart[i][key];
-        totalCost += value ;
-      //}
+      var value = cart[i][key];
+      totalCost += value ;
     }
   }
   return totalCost;
@@ -65,7 +63,7 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  if (cardNumber === undefined) {
+  if (cardNumber === 'undefined') {
     console.log("Sorry, we don't have a credit card on file for you.");
   } else {
     console.log(`Your total cost is $${total}, which will be charged to the card ${cardNumber}.`)
