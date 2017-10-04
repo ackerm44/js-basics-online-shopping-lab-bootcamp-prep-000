@@ -50,16 +50,16 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var itemInCart == false;
+  var itemInCart = false;
 
   for (var i = 0; i < cart.length; i++) {
     if (cart[i].hasOwnProperty(item)) {
       cart.splice(i, 1);
-      itemInCart = true;
+      itemInCart == true;
       return cart;
     }
   }
-  if (iteminCart == false )  {
+  if (!iteminCart)  {
       console.log("That item is not in your cart");
   }
 }
