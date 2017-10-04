@@ -39,7 +39,7 @@ function viewCart() {
     }
 }
 
-
+viewCart(); 
 
 function total() {
   var totalCost = 0;
