@@ -34,12 +34,13 @@ function viewCart() {
            }
         }
       }
+      viewCart(); 
       console.log("test");
       console.log(string);
     }
 }
 
-viewCart(); 
+
 
 function total() {
   var totalCost = 0;
