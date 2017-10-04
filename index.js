@@ -40,10 +40,12 @@ function viewCart() {
 
 function total() {
   var totalCost = 0;
-  for (var key in cart) {
-    if(cart.hasOwnProperty(key)) {
-      var value = cart[key];
-      totalCost += value ;
+  for (var i = 0; i < cart.length; i++) {
+    for (var key in cart[i]) {
+      if(cart.hasOwnProperty(key)) {
+        var value = cart[i][key];
+        totalCost += value ;
+      }
     }
   }
   return totalCost;
