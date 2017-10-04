@@ -36,11 +36,12 @@ function viewCart() {
             } else if (i == cart.length - 1) {
               string += "."            }
           } else {
-              string += `${key} at $${cart[i][key]}, `;
-              if (i == cart.length - 2) {
-                string += `and `;
+              string += `${key} at $${cart[i][key]}`;
+              if (i == cart.length - 3) {
+                string += ", "
+              } else if (i == cart.length - 2) {
+                string += `, and `;
               } else if (i == cart.length - 1) {
-                //string -= ",";
                 string += "."
               }
             }
