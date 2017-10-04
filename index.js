@@ -20,12 +20,12 @@ function addToCart(item) {
 
 
 function viewCart() {
-  if (cart.length == 0) {
+  if (cart.length === 0) {
     console.log("Your shopping cart is empty.");
   } else {
-    for (var key in cart) {
-      var string = "In your cart, you have ";
-      string += `${key} at ${cart[key]}`
+    var string = "In your cart, you have ";
+    for (var key in cart[i]) {
+      string += `${key} at $${cart[i][key]}`
       }
       console.log(string);
     }
@@ -50,7 +50,7 @@ function removeFromCart(item) {
     } else {
       console.log("That item is not in your cart");
       }
-  }  
+  }
 }
 
 function placeOrder(cardNumber) {
